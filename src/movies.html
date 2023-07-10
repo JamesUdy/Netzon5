@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETZON5</title>
+    <link rel="stylesheet" href="/build/output.css">
+</head>
+
+<body class="bg-slate-100 dark:bg-black text-white font-body">
+    <div class="img h-screen">
+        <img  src="/img/plane.jpg" alt="" class="h-screen w-screen">
+        <div class="poster px-3">
+            <div class="flex justify-between items-center">
+                <nav id="navbar">
+                    <div class="flex justify-around items-center m-2">
+                        <img src="/img/Logo/Netzon5.png" class="w-20" alt="">
+                        <h1>
+                            <a href="#" class="text-xl">NETZON5</a>
+                        </h1>
+                        <div class="px-4 cursor-pointer lg:hidden" id="bar">
+                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="m-4  lg:flex flex-row hidden">
+                        <li class="nav hover:bg-red-600 bg-transparent rounded-md hover:rounded-md hover:bg-opacity-50">
+                            <a href="/src/index.html">HOME</a>
+                        </li>
+                        <li class="nav rounded-md bg-primary hover:bg-opacity-70">
+                            <a href="#">MOVIES</a>
+                        </li>
+                        <li class="nav hover:bg-red-600 bg-transparent rounded-md hover:rounded-md hover:bg-opacity-50">
+                            <a href="/src/series.html">TV SERIES</a>
+                        </li>
+                        <li class="nav hover:bg-red-600 bg-transparent rounded-md hover:rounded-md hover:bg-opacity-50">
+                            <a href="#">SEARCH</a>
+                        </li>
+                    </ul>
+                    <button id="theme-toggle" type="button" class="rounded-full border-transparent hover:border-transparent border-r-0 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:bg-opacity-50 focus:outline-none focus:ring-4 focus:ring-transparent dark:focus:ring-transparent text-sm p-2.5">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                </nav>
+                <a class="m-2 rounded-md bg-primary pt-2 pb-2 pl-3 pr-3 text-sm font-bold hover:bg-opacity-70"
+                    href="#">SIGN IN</a>
+            </div>
+            <div class="pl-10 lg:pl-40 pr-40 pt-20 flex flex-col justify-center">
+                <h1 class="text-3xl lg:text-large font-bold">PLANE</h1>
+                <div class="flex flex-row justify-start items-center mt-10 mb-10">
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 mr-2 text-sm font-bold  text-white">6.90</p>
+                    </div>
+                    <a class="p-2 ml-1 mr-1 text-sm transition ease-out duration-1000 rounded-full bg-primary hover:bg-opacity-70"
+                        href="#">Action</a>
+                    <a class="p-2 ml-1 mr-1 text-sm transition ease-out duration-1000 rounded-full bg-primary hover:bg-opacity-70"
+                        href="#">Adventure</a>
+                </div>
+                <p class="w-full lg:w-1/2 line-clamp-3 pr-2">After a heroic job of successfully landing his storm-damaged aircraft in a war zone,
+                     a fearless pilot finds himself between the agendas of multiple militias planning to take the plane and its passengers hostage.</p>
+                <div
+                    class="mt-6 ml-0 flex flex-row justify-center items-center w-40 m-2 rounded-md bg-primary p-2 text-sm font-bold hover:bg-opacity-70">
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                    </svg>
+                    <a class="text-xs font-semibold" href="#">WATCH NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" pt-4 ml-6 mr-6 mb-10 mt-4">
+        <h1 class="text-xl font-bold mb-8">
+            <div class="flex flex-col lg:flex-row justify-between items-end px-8">
+                <span class="dark:text-white text-gray-800 text-2xl" >MOVIES</span>
+                <div>
+                   <ul class="mx-1  flex flex-row justify-between items-end">
+                    <li class="p-2 mx-1 text-sm transition ease-out duration-1000 rounded-md bg-primary hover:bg-opacity-70">
+                        <a href="#">POPULAR</a>
+                    </li>
+                    <li class="p-2 mx-1 text-sm transition ease-out duration-1000 hover:bg-red-600 bg-transparent rounded-md hover:rounded-md hover:bg-opacity-50 dark:text-white text-gray-800">
+                        <a href="#">TOP RATED</a>
+                    </li>
+                   </ul> 
+                </div>
+            </div>
+        </h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:justify-center sm:justify-center justify-center">
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+            <div class="mv-b group">
+                <img class="h-256 w-full object-cover" src="/img/batman.jpg" alt="">
+                <div class="mv-f">
+                    <span class="play"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>                    
+                    </span>
+                    <div class="flex flex-row">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Rating star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <p class="ml-2 text-sm font-bold text-white">8.50</p>
+                    </div>
+                    <a class="mt-2 mb-2" href="#">2008</a>
+                    <a class="font-bold line-clamp-1" href="#">The Dark Knight</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="bg-white text-black dark:bg-footer dark:text-white h-24 flex flex-row justify-between items-center sm:flex-col sm:h-32 md:flex-row md:p-4">
+        <div class="flex justify-around items-center m-2 cursor-not-allowed">
+            <img src="/img/Logo/Netzon5.png" class="w-14" alt="">
+            <h1>
+                <a href="#" class="text-xl">NETZON5</a>
+            </h1>
+        </div>
+        <ul class="m-4 flex  flex-row items-center">
+            <li class="nav1 hover:bg-red-600 bg-transparent rounded-md hover:rounded-md hover:bg-opacity-50">
+                <a href="/src/index.html">HOME</a>
+            </li>
+            <li class="nav1 hover:bg-red-600 bg-transparent rounded-md hover:rounded-md hover:bg-opacity-50">
+                <a href="/src/movies.html">MOVIES</a>
+            </li>
+            <li class="nav1 hover:bg-red-600 bg-transparent rounded-md hover:rounded-md hover:bg-opacity-50">
+                <a href="/src/series.html">TV SERIES</a>
+            </li>
+            <li class="nav1 hover:bg-red-600 bg-transparent rounded-md hover:rounded-md hover:bg-opacity-50">
+                <a href="#">SEARCH</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } 
+        else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
